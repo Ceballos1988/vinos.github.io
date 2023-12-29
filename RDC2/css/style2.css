@@ -1,0 +1,559 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Raleway', sans-serif;  
+}
+
+
+.background-fondo-1 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   right: 0;
+   z-index: -1;
+   padding-bottom: 100px;
+   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+    /* Ajusta este valor según sea necesario */
+}
+
+.container-fluid a{
+   padding-left: 220px;
+}
+
+/* texto */
+.navbar-dark .navbar-nav .nav-link {
+color: #fafafa;
+font-size: 1.5vw;
+}
+.navbar-nav .nav-item {
+margin-right: 30px; /* Ajusta el margen derecho entre elementos */
+}
+    
+/* Cambio de color al pasar el ratón por encima */
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #00a0f2;
+border-bottom: 2px solid #00a0f2;
+animation: flash; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 2s; 
+
+}
+    
+/* Menu hamburguesa */
+.navbar-toggler {
+border: none;
+}    
+.navbar-toggler:active {
+border: none;
+outline: none;
+transform: translateY(5px);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+/*para sacarle la linea de bootstrap */
+.navbar {
+--bs-navbar-toggler-focus-width: none;
+--bs-navbar-toggler-transition: none;
+}
+
+#navbarNav{
+   padding-left: 100px;
+}
+/* fin Menu hamburguesa */
+
+/*seccion 1*/
+
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 50px 0;
+}
+
+.seccion-1 h1 {
+    
+font-size: 2.5vw;
+color: #00153e;
+justify-content: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+padding-bottom: 30px;
+
+}
+  
+.seccion-1 img {
+width: 100%;
+height: 100%;
+}
+
+.btn-wp{
+color: #fafafa;
+text-decoration: none;
+padding: 20px;
+background: rgb(0, 21, 62);
+background: linear-gradient(174deg, rgba(0, 21, 62, 1) 0%, rgba(0, 160, 242, 1) 100%);
+border-radius: 5px;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra por defecto */
+}
+
+.btn-wp:hover {
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra hacia adentro en hover */
+   transform: scale(0.95); /* Escala hacia adentro */
+}
+
+
+/* fin seccion 1*/
+
+/*seccion-nosotros*/
+
+
+.icon-container-nosotros {
+   display: flex;
+   flex-direction: column;
+   align-items: center; /* Centra horizontalmente */
+   justify-content: center; /* Centra verticalmente */
+   margin-top: 20px;
+}
+
+.icon-nosotros {
+   font-size: 3em;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.icon-nosotros img {
+   max-width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+   display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto;
+}
+
+/* Resto del estilo */
+.glass-container {
+   padding: 30px;
+}
+
+.nosotros-section {
+   padding-top: 10px;
+}
+
+.nosotros-section h2 {
+   font-family: 'Playfair Display', serif;
+   color: #00153e;
+   font-size: 2.5vw;
+   padding-top: 40px;
+   padding-bottom: 50px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-section h3 {
+   color: #00153e;
+   font-size: 1.2vw;
+   padding-top: 40px;
+   padding-bottom: 30px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   font-weight: bold;
+}
+
+.nosotros-section p {
+   font-size: 1.2rem;
+   color: #00153e;
+}
+
+.scale-icon {
+   animation: scale 2s infinite alternate;
+}
+
+@keyframes scale {
+   from {
+       transform: scale(1);
+   }
+   to {
+       transform: scale(1.2);
+   }
+}
+
+.decorativo-1 {
+   position: absolute;
+   z-index: -1;
+   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+}
+
+.decorativo-2 {
+   position: absolute;
+   z-index: -1;
+   padding-top: 400px;
+   right: 0;
+   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+}
+/* FIN seccion-nosotros*/
+
+/* Descubre Section */
+#descubre {
+max-width: 1200px;
+margin: 0 auto; /* Centra el contenido en la página */
+padding-top: 100px;
+}
+  
+.descubre-section {
+text-align: center;
+}
+
+  
+.icon-container-valores,
+.icon-container-tecnologia {
+max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+margin: 0 auto; /* Centra el contenido en la página */
+padding-top: 50px;
+padding-bottom: 50px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 20px;
+
+}
+
+  
+.icon-valores,
+.icon-tecnologia {
+text-align: center;
+flex-basis: 33.33%; /* Establece la anchura de cada elemento a un tercio del contenedor */
+margin-bottom: 20px;
+align-items: center center;
+}
+  
+.icon-valores img {
+max-width: 57%;
+margin-bottom: 20px;
+margin-left: 40px;
+}
+  
+.icon-tecnologia img {
+max-width: 51%;
+margin-bottom: 20px;
+margin-left: 40px;
+}
+  
+.content-valores h2,
+.content-tecno h2 {
+font-family: 'Playfair Display', serif;
+color: #00153e;
+font-size: 2.5vw;
+padding-top: 50px;
+padding-bottom: 30px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.decorativo-3{
+position:absolute;
+z-index: -1;
+filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+left: 0;    
+}  
+
+/* Parte de tarjetas */
+
+.card {
+position: relative;
+max-width: 100%;
+height: 30vh;
+margin: 0 auto;
+background: rgb(0,21,62);
+background: linear-gradient(317deg, rgba(0,21,62,1) 0%, rgba(14,12,121,1) 70%, rgba(0,160,242,0.969625350140056) 100%);     
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 30px;
+perspective: 800px; /* Ajusta la perspectiva según sea necesario */
+border-radius: 10px;
+box-shadow: 4px 4px 4px rgba(8, 0, 0, 0.5);
+}
+  
+.card:hover .card-content {
+transform: rotateY(-180deg);
+}
+  
+.card:hover .card-content-back {
+transform: rotateY(0deg);
+border-radius: 10px;
+box-shadow: 4px 4px 4px rgba(8, 0, 0, 0.5);
+}
+  
+.card .card-content,
+.card .card-content-back {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+backface-visibility: hidden; /* Oculta la parte trasera durante la rotación */
+transition: transform 0.6s; /* Agregamos transición para un efecto suave */
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+  
+.card-content {
+transform: rotateY(0deg);
+}
+  
+.card-content h2 {
+font-family: 'Playfair Display', serif;
+color: #f8f9fa;
+font-size: 2.5vw;
+padding-top: 20px;
+padding-bottom: 30px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.card-content-back {
+transform: rotateY(180deg);
+background: rgb(0,21,62);
+background: linear-gradient(50deg, rgba(0,21,62,1) 0%, rgba(14,12,121,1) 70%, rgba(0,160,242,0.969625350140056) 100%);
+color: white;
+}
+  
+.card-content-back p {
+font-size: 16px;
+padding: 30px;
+}
+
+
+/*FIN  Descubre Section */
+
+/* clientes Section */
+.clientes-section h2 {
+font-family: 'Playfair Display', serif;
+color: #00153e;
+font-size: 2.5vw;
+padding-top: 50px;
+padding-bottom: 50px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+.container-clientes {   
+margin: 0 auto;
+}
+  
+.scroll-outer-container {
+overflow: hidden;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 10px;
+position: relative; /* Cambiamos a posición relativa */
+}
+  
+.scroll-inner-container {
+display: flex;
+animation: scroll 8s linear infinite; /* Ajusta la duración según sea necesario */
+}
+  
+.scroll-container {
+display: flex;
+justify-content: start; /* Modificamos a 'start' para que las imágenes aparezcan desde la izquierda */
+align-items: center;
+}
+  
+.client-image {
+margin-right: 200px;
+position: relative;
+background-color: #f8f9fa;
+border-radius: 5px;
+}
+  
+.client-image img {
+max-width: 100%;
+border-radius: 8px;
+box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra solo en los lados derecho e izquierdo */
+transition: transform 0.3s ease-in-out; /* Agregamos una transición para el efecto de flotación */ 
+}
+  
+.client-image img:hover {
+transform: translateY(-10px); /* Efecto de flotación al pasar el mouse */
+}
+  
+@keyframes scroll {   
+0% {
+transform: translateX(-100%); /* Mueve las imágenes a la derecha */
+}
+90% {
+transform: translateX(-100); /* Vuelve a empezar */
+}
+100% {
+transform: translateX(100%); /* Mueve las imágenes a la derecha */
+}
+}
+.decorativo-3{
+    position:absolute;
+    z-index: -1;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+}
+
+/* FIN clientes Section */
+
+/* SECCION formulario */
+.contacto .row {
+   padding-top: 50px;
+   display: flex;
+   justify-content: center; /* Centrar horizontalmente */
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.contacto h2 {
+   font-family: 'Playfair Display', serif;
+   color: #00153e;
+   font-size: 2.5vw;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contacto .row form {
+   flex: 1 1 30rem;
+   border: var(--border);
+   padding: 2rem;
+   text-align: center;
+}
+
+.contacto .row form h3 {
+   color: #00153e;
+   font-size: 1.2vw;
+   margin-bottom: 1rem;
+   color: var(--black);
+}
+
+.contacto .row form .box {
+   width: 100%;
+   padding: 1.4rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   border: var(--border);
+   margin: 1rem 0;
+}
+
+
+
+.btn-contacto {
+   color: #fafafa;
+   text-decoration: none;
+   padding: 20px;
+   background: rgb(0, 21, 62);
+   background: linear-gradient(174deg, rgba(0, 21, 62, 1) 0%, rgba(0, 160, 242, 1) 100%);
+   border-radius: 5px;
+   transition: box-shadow 0.3s ease, transform 0.3s ease;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra por defecto */
+}
+
+.btn-contacto:hover {
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra hacia adentro en hover */
+   transform: scale(0.95); /* Escala hacia adentro */
+}
+
+
+
+.contacto .row div {
+   text-align: center;
+}
+
+.contacto .row div img {
+   display: inline-block;
+   max-width: 80%;
+  
+}
+
+.decorativo-4{
+   position:absolute;
+   z-index: -1;
+   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9)); /* Ajusta los valores según sea necesario */
+
+ 
+   }
+
+   .contacto .formulario {
+      position: relative;
+      background-color: rgba(136, 212, 240, 0.2); /* Color de fondo con transparencia */
+      padding: 10px; /* Ajusta el espaciado según sea necesario */
+      border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
+      backdrop-filter: blur(10px); /* Desenfoque del fondo */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); / 
+  }
+  
+  /* Ajusta según sea necesario */
+  .contacto .formulario::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('tu-imagen-de-fondo.jpg') center/cover fixed; /* Reemplaza con tu imagen de fondo */
+      z-index: -1;
+      filter: blur(8px); /* Desenfoque adicional del fondo */
+  }
+  #contacto{
+   padding-bottom: 80px;
+  }
+
+  /*FIN  formulario de contacto */
+
+  /*FOOTER */
+  .footer {
+ 
+   background: rgb(0, 21, 62);
+   background: linear-gradient(174deg, rgba(0, 21, 62, 1) 0%, rgba(0, 160, 242, 1) 100%);
+   color: #ffffff;
+   padding: 20px 0;
+   margin-top: 20px;
+   text-align: center;
+}
+
+.footer-icon {
+   font-size: 2em;
+   margin-bottom: 30px;
+}
+
+.footer p {
+   margin-bottom: 5px;
+}
+
+/* FIN FOOTER */
+
+/* BOTON PARA SUBIR */
+.btn-scroll-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   display: none;
+   z-index: 999;
+   background-color: #00153e; /* Cambia el color de fondo según tus preferencias */
+   color: #fff; /* Cambia el color del icono según tus preferencias */
+   border: none;
+   padding: 15px; /* Ajusta el tamaño del botón según tus necesidades */
+   font-size: 16px; /* Ajusta el tamaño del icono según tus necesidades */
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Agrega un sombreado blanco */
+
+ }
+ 
+ .btn-scroll-top i {
+   font-size: 20px; /* Ajusta el tamaño del icono según tus necesidades */
+ }
+ 
+ @media (min-width: 768px) {
+   .btn-scroll-top {
+     display: block;
+   }
+ }
+ 
+
+/* Estilo del botón de WhatsApp con imagen */
+.btn-whatsapp {
+   position: fixed;
+   bottom: 5px;
+   left: 20px;
+   width: 5%;
+   /* Ajusta otros estilos según tus necesidades */
+ }
+
